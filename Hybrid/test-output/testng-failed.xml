@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testng.BrokenLinks">
+      <class name="Testng.SsForFailedTestcases">
         <methods>
-          <include name="main"/>
+          <include name="invalidLoginTest"/>
+          <include name="emptyFieldsTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Testng.BrokenLinks -->
+      </class> <!-- Testng.SsForFailedTestcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
